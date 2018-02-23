@@ -1,0 +1,2 @@
+target 'Anton_Duda_SimplePins'
+pod 'FBSDKLoginKit'
