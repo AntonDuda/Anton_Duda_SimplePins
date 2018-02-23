@@ -18,9 +18,11 @@
 		3A34468D2040BE4E0096BE1B /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A34468C2040BE4E0096BE1B /* DBManager.swift */; };
 		3A3446902040C1680096BE1B /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A34468E2040C1680096BE1B /* User+CoreDataClass.swift */; };
 		3A3446912040C1680096BE1B /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A34468F2040C1680096BE1B /* User+CoreDataProperties.swift */; };
+		78D5A1F350494DFCC32B5E12 /* libPods-Anton_Duda_SimplePins.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 051DB5EA01F69FDA901FD361 /* libPods-Anton_Duda_SimplePins.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		051DB5EA01F69FDA901FD361 /* libPods-Anton_Duda_SimplePins.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Anton_Duda_SimplePins.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A34465A2040B8300096BE1B /* Anton_Duda_SimplePins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anton_Duda_SimplePins.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A34465D2040B8300096BE1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A34465F2040B8300096BE1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +36,8 @@
 		3A34468C2040BE4E0096BE1B /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		3A34468E2040C1680096BE1B /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3A34468F2040C1680096BE1B /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3C6538169A2BDD4EB9121628 /* Pods-Anton_Duda_SimplePins.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anton_Duda_SimplePins.release.xcconfig"; path = "Pods/Target Support Files/Pods-Anton_Duda_SimplePins/Pods-Anton_Duda_SimplePins.release.xcconfig"; sourceTree = "<group>"; };
+		6B45B1BC5F09DFC249491DEE /* Pods-Anton_Duda_SimplePins.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anton_Duda_SimplePins.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Anton_Duda_SimplePins/Pods-Anton_Duda_SimplePins.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78D5A1F350494DFCC32B5E12 /* libPods-Anton_Duda_SimplePins.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +57,8 @@
 			children = (
 				3A34465C2040B8300096BE1B /* Anton_Duda_SimplePins */,
 				3A34465B2040B8300096BE1B /* Products */,
+				956F1902AE5D8B389FEE1AF5 /* Pods */,
+				614B8E3A6A6919F83A006E07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +105,23 @@
 			path = Entitis;
 			sourceTree = "<group>";
 		};
+		614B8E3A6A6919F83A006E07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				051DB5EA01F69FDA901FD361 /* libPods-Anton_Duda_SimplePins.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		956F1902AE5D8B389FEE1AF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B45B1BC5F09DFC249491DEE /* Pods-Anton_Duda_SimplePins.debug.xcconfig */,
+				3C6538169A2BDD4EB9121628 /* Pods-Anton_Duda_SimplePins.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -105,9 +129,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A34466F2040B8300096BE1B /* Build configuration list for PBXNativeTarget "Anton_Duda_SimplePins" */;
 			buildPhases = (
+				9A336816553289BB17C58EC7 /* [CP] Check Pods Manifest.lock */,
 				3A3446562040B8300096BE1B /* Sources */,
 				3A3446572040B8300096BE1B /* Frameworks */,
 				3A3446582040B8300096BE1B /* Resources */,
+				10E6E1CDA60A8A6F799B03E6 /* [CP] Embed Pods Frameworks */,
+				FC410FB25D01F75954918571 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,6 +191,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10E6E1CDA60A8A6F799B03E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Anton_Duda_SimplePins/Pods-Anton_Duda_SimplePins-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A336816553289BB17C58EC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Anton_Duda_SimplePins-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC410FB25D01F75954918571 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Anton_Duda_SimplePins/Pods-Anton_Duda_SimplePins-resources.sh",
+				"${PODS_ROOT}/FBSDKCoreKit/FacebookSDKStrings.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FacebookSDKStrings.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Anton_Duda_SimplePins/Pods-Anton_Duda_SimplePins-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3A3446562040B8300096BE1B /* Sources */ = {
@@ -312,10 +393,12 @@
 		};
 		3A3446702040B8300096BE1B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B45B1BC5F09DFC249491DEE /* Pods-Anton_Duda_SimplePins.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Anton_Duda_SimplePins/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "AD.Anton-Duda-SimplePins";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -326,10 +409,12 @@
 		};
 		3A3446712040B8300096BE1B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C6538169A2BDD4EB9121628 /* Pods-Anton_Duda_SimplePins.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Anton_Duda_SimplePins/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "AD.Anton-Duda-SimplePins";
 				PRODUCT_NAME = "$(TARGET_NAME)";
