@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A23EEB32041674600A47868 /* Anton_Duda_SimplePins.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A23EEB12041674600A47868 /* Anton_Duda_SimplePins.xcdatamodeld */; };
+		3A23EEB52041852600A47868 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A23EEB42041852600A47868 /* MapViewController.swift */; };
+		3A23EEB72041995F00A47868 /* ContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A23EEB62041995F00A47868 /* ContainerController.swift */; };
 		3A34465E2040B8300096BE1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A34465D2040B8300096BE1B /* AppDelegate.swift */; };
 		3A3446632040B8300096BE1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3446612040B8300096BE1B /* Main.storyboard */; };
-		3A3446662040B8300096BE1B /* SimplePins.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A3446642040B8300096BE1B /* SimplePins.xcdatamodeld */; };
 		3A34466B2040B8300096BE1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3446692040B8300096BE1B /* LaunchScreen.storyboard */; };
 		3A3446892040BE1A0096BE1B /* Pin+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3446852040BE1A0096BE1B /* Pin+CoreDataProperties.swift */; };
 		3A34468A2040BE1A0096BE1B /* Pin+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3446862040BE1A0096BE1B /* Pin+CoreDataClass.swift */; };
@@ -25,10 +27,12 @@
 /* Begin PBXFileReference section */
 		0B1CFE8986B365B34BC990C1 /* Pods-Anton_Duda_SimplePins.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anton_Duda_SimplePins.release.xcconfig"; path = "Pods/Target Support Files/Pods-Anton_Duda_SimplePins/Pods-Anton_Duda_SimplePins.release.xcconfig"; sourceTree = "<group>"; };
 		0D06CB049688048F7EFEC09A /* libPods-Anton_Duda_SimplePins.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Anton_Duda_SimplePins.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A23EEB22041674600A47868 /* SimplePins.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimplePins.xcdatamodel; sourceTree = "<group>"; };
+		3A23EEB42041852600A47868 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		3A23EEB62041995F00A47868 /* ContainerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerController.swift; sourceTree = "<group>"; };
 		3A34465A2040B8300096BE1B /* Anton_Duda_SimplePins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anton_Duda_SimplePins.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A34465D2040B8300096BE1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A3446622040B8300096BE1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3A3446652040B8300096BE1B /* Anton_Duda_SimplePins.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Anton_Duda_SimplePins.xcdatamodel; sourceTree = "<group>"; };
 		3A34466A2040B8300096BE1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A3446852040BE1A0096BE1B /* Pin+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pin+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3A3446862040BE1A0096BE1B /* Pin+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pin+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -80,7 +84,7 @@
 				3A3446972040D8420096BE1B /* ViewControllers */,
 				3A3446692040B8300096BE1B /* LaunchScreen.storyboard */,
 				3A3446612040B8300096BE1B /* Main.storyboard */,
-				3A3446642040B8300096BE1B /* SimplePins.xcdatamodeld */,
+				3A23EEB12041674600A47868 /* Anton_Duda_SimplePins.xcdatamodeld */,
 				3A34469E2040DA4F0096BE1B /* Anton_Duda_SimplePins-Bridging-Header.h */,
 				3A3446A22040DA7E0096BE1B /* Assets.xcassets */,
 				3A34469F2040DA4F0096BE1B /* Info.plist */,
@@ -111,7 +115,9 @@
 		3A3446972040D8420096BE1B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3A23EEB62041995F00A47868 /* ContainerController.swift */,
 				3A34469A2040D9F40096BE1B /* LoginViewController.swift */,
+				3A23EEB42041852600A47868 /* MapViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -263,10 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A3446662040B8300096BE1B /* SimplePins.xcdatamodeld in Sources */,
 				3A3446912040C1680096BE1B /* User+CoreDataProperties.swift in Sources */,
 				3A34468D2040BE4E0096BE1B /* DBManager.swift in Sources */,
+				3A23EEB72041995F00A47868 /* ContainerController.swift in Sources */,
 				3A34468A2040BE1A0096BE1B /* Pin+CoreDataClass.swift in Sources */,
+				3A23EEB32041674600A47868 /* Anton_Duda_SimplePins.xcdatamodeld in Sources */,
+				3A23EEB52041852600A47868 /* MapViewController.swift in Sources */,
 				3A3446892040BE1A0096BE1B /* Pin+CoreDataProperties.swift in Sources */,
 				3A34465E2040B8300096BE1B /* AppDelegate.swift in Sources */,
 				3A34469B2040D9F40096BE1B /* LoginViewController.swift in Sources */,
@@ -461,13 +469,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		3A3446642040B8300096BE1B /* SimplePins.xcdatamodeld */ = {
+		3A23EEB12041674600A47868 /* Anton_Duda_SimplePins.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				3A3446652040B8300096BE1B /* Anton_Duda_SimplePins.xcdatamodel */,
+				3A23EEB22041674600A47868 /* SimplePins.xcdatamodel */,
 			);
-			currentVersion = 3A3446652040B8300096BE1B /* Anton_Duda_SimplePins.xcdatamodel */;
-			path = SimplePins.xcdatamodeld;
+			currentVersion = 3A23EEB22041674600A47868 /* SimplePins.xcdatamodel */;
+			path = Anton_Duda_SimplePins.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

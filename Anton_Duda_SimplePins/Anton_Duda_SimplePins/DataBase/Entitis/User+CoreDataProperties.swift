@@ -17,10 +17,7 @@ extension User {
         return NSFetchRequest<User>(entityName: "User")
     }
 
-    @NSManaged public var firstName: String?
-    @NSManaged public var lastName: String?
-    @NSManaged public var fbToken: String?
-    @NSManaged public var id: Int64
+    @NSManaged public var id: String?
     @NSManaged public var isActive: Bool
     @NSManaged public var pins: NSSet?
 
