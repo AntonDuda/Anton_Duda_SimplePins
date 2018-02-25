@@ -23,7 +23,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         super.viewDidLoad()
     
         mapView.delegate = self
-        mapView.register(MKAnnotationView.self, forAnnotationViewWithReuseIdentifier: "MKAnnotationView")
+        mapView.register(MKPinAnnotationView.self, forAnnotationViewWithReuseIdentifier: "MKAnnotationView")
         
         if CLLocationManager.locationServicesEnabled() {
             locationManager.delegate = self
@@ -71,7 +71,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     @IBAction func addSomePin(_ sender: UILongPressGestureRecognizer) {
-        
         let location = sender.location(in: mapView)
         let locCoordinate = mapView.convert(location, toCoordinateFrom: mapView)
         
@@ -97,7 +96,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
 extension MapViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView,
                  viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        let view = mapView.dequeueReusableAnnotationView(withIdentifier: "MKAnnotationView")
+        let view = mapView.dequeueReusableAnnotationView(withIdentifier: "MKAnnotationView") as? MKPinAnnotationView
         view?.isDraggable = true
         return view
     }
